@@ -1,0 +1,27 @@
+{
+  "name": "tunegathering",
+  "version": "0.1.0",
+  "description": "Listen together: millisecond-synced music playback across every device in the room, with spatial audio and chat.",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "demo-tracks": "node scripts/generate-demo-tracks.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "audio",
+    "sync",
+    "web-audio",
+    "websocket",
+    "listen-together"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.22.0"
+  }
+}

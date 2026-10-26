@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Turn every phone and laptop in the room into one speaker system. Millisecond-synced playback, spatial audio and chat — right in the browser." />
+    <title>TuneGathering</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="/fonts/Anton-Regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="stylesheet" href="/css/app.css" />
+  </head>
+  <body class="landing">
+    <div class="art-stage" aria-hidden="true">
+      <div class="art-panel p1"></div>
+      <div class="art-panel p2"></div>
+      <div class="art-panel p3"></div>
+    </div>
+
+    <main class="landing-main">
+      <section class="landing-hero">
+        <a class="logo-stack" href="/" aria-label="TuneGathering home">
+          <span class="display l1">Tune</span>
+          <span class="display l2">Gathering</span>
+          <span class="tag">Every device · One sound</span>
+        </a>
+        <p class="hero-sub">
+          Turn the phones and laptops around you into one speaker system. Playback lines up to the millisecond, and spatial audio sweeps the music around the room.
+        </p>
+        <div class="feature-strip">
+          <div><b>Millisecond sync</b>NTP-style clock sync + Web Audio scheduling.</div>
+          <div><b>Spatial audio</b>Drag the sound around a live radar.</div>
+          <div><b>Crew &amp; chat</b>Shared queue, uploads, chat. No accounts.</div>
+        </div>
+      </section>
+
+      <section class="pause-panel" aria-label="Online">
+        <div class="panel-title">
+          <span>Online</span>
+          <span class="menu-label" style="font-size: 14px; color: var(--money)" id="live-count"></span>
+        </div>
+
+        <form id="join-form" class="code-row" autocomplete="off">
+          <label for="room-code">Join a session — enter code</label>
+          <div class="code-boxes" id="code-boxes">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <input id="room-code" inputmode="numeric" maxlength="6" pattern="\d{6}" aria-label="6-digit room code" />
+          </div>
+          <button class="btn btn-primary" type="submit" id="join-btn" disabled>Join session</button>
+        </form>
+
+        <ul class="menu-list">
+          <li>
+            <button class="menu-item" id="create-btn" type="button">
+              <span>Start new gathering</span>
+              <span class="chev" aria-hidden="true">›</span>
+            </button>
+          </li>
+        </ul>
+
+        <div class="panel-title" style="border-bottom-color: var(--franklin); font-size: 16px">Public sessions</div>
+        <ul class="session-list" id="room-list">
+          <li class="session-empty">No sessions running. Start one and share the code.</li>
+        </ul>
+
+        <div class="panel-footer">
+          <span>Playing as <button class="link-btn" id="name-btn" type="button" title="Change your display name"></button></span>
+          <span class="keycap" title="Press Enter to join">↵</span>
+        </div>
+      </section>
+    </main>
+
+    <div class="tip-bar" aria-live="polite"><b>TIP</b><span class="tip-text" id="tip"></span></div>
+    <div class="loading-corner" aria-hidden="true"><span id="corner-text">Online</span><div class="spinner"></div></div>
+
+    <script type="module" src="/js/landing.js"></script>
+  </body>
+</html>

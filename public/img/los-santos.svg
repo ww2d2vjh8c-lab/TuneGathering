@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <!-- Original artwork for TuneGathering: a sunset over a palm-lined city. -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#140c2e"/>
+      <stop offset="0.38" stop-color="#5a2a6e"/>
+      <stop offset="0.6" stop-color="#d1576b"/>
+      <stop offset="0.74" stop-color="#f59a5b"/>
+      <stop offset="0.82" stop-color="#ffd58a"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff4c2"/>
+      <stop offset="0.55" stop-color="#ffd27a"/>
+      <stop offset="1" stop-color="#ff9a5a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="haze" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffb070" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ffb070" stop-opacity="0.35"/>
+    </linearGradient>
+    <g id="palm">
+      <path d="M0 0 C 6 -90, -10 -190, 14 -300" stroke="#07040c" stroke-width="12" fill="none" stroke-linecap="round"/>
+      <g fill="#07040c" transform="translate(14 -300)">
+        <path d="M0 0 C -40 -30, -95 -20, -130 20 C -90 -2, -50 -4, 0 6Z"/>
+        <path d="M0 0 C 40 -34, 100 -28, 140 12 C 96 -6, 50 -6, 0 6Z"/>
+        <path d="M0 0 C -20 -50, -60 -80, -100 -80 C -60 -64, -30 -40, -4 4Z"/>
+        <path d="M0 0 C 26 -52, 70 -78, 110 -72 C 70 -60, 36 -36, 4 4Z"/>
+        <path d="M0 0 C -50 10, -90 50, -100 100 C -76 58, -44 30, 0 8Z"/>
+        <path d="M0 0 C 50 12, 86 54, 94 104 C 72 62, 42 32, 0 8Z"/>
+        <path d="M0 0 C 4 -40, 0 -80, -12 -104 C 6 -80, 12 -40, 6 2Z"/>
+      </g>
+    </g>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="1080" cy="560" r="210" fill="url(#sun)"/>
+  <circle cx="1080" cy="560" r="105" fill="#ffe7a6"/>
+  <g fill="#f59a5b" opacity="0.55">
+    <rect x="960" y="575" width="240" height="7"/>
+    <rect x="960" y="595" width="240" height="9"/>
+    <rect x="960" y="617" width="240" height="11"/>
+  </g>
+
+  <!-- Hills with the sign -->
+  <path d="M0 610 C 160 520, 300 500, 460 540 C 600 575, 700 470, 860 480 C 1000 490, 1100 560, 1260 530 C 1400 500, 1500 540, 1600 520 L1600 700 L0 700Z" fill="#3b1d4d"/>
+  <path d="M0 650 C 200 600, 380 610, 560 630 C 760 650, 900 600, 1100 620 C 1300 640, 1450 610, 1600 630 L1600 700 L0 700Z" fill="#2a1438"/>
+  <g fill="#f4ecff" font-family="Anton, Impact, sans-serif" font-size="30" opacity="0.85" transform="translate(600 500) rotate(-3)">
+    <text x="0" y="0">T</text><text x="26" y="4">U</text><text x="54" y="2">N</text><text x="81" y="6">E</text>
+    <text x="106" y="4">W</text><text x="141" y="8">O</text><text x="168" y="6">O</text><text x="196" y="10">D</text>
+  </g>
+
+  <!-- Downtown skyline -->
+  <g fill="#1d0f2b">
+    <rect x="180" y="560" width="46" height="140"/><rect x="232" y="520" width="38" height="180"/>
+    <rect x="276" y="585" width="52" height="115"/><rect x="334" y="470" width="44" height="230"/>
+    <rect x="384" y="540" width="60" height="160"/><rect x="452" y="500" width="34" height="200"/>
+    <rect x="492" y="575" width="56" height="125"/><rect x="1300" y="540" width="48" height="160"/>
+    <rect x="1354" y="505" width="40" height="195"/><rect x="1400" y="570" width="66" height="130"/>
+    <path d="M344 470 L356 430 L368 470Z"/>
+  </g>
+  <g fill="#ffcf7a" opacity="0.7">
+    <rect x="240" y="540" width="6" height="8"/><rect x="254" y="560" width="6" height="8"/><rect x="344" y="500" width="6" height="8"/>
+    <rect x="360" y="530" width="6" height="8"/><rect x="398" y="560" width="6" height="8"/><rect x="460" y="520" width="6" height="8"/>
+    <rect x="1364" y="530" width="6" height="8"/><rect x="1378" y="560" width="6" height="8"/><rect x="1312" y="570" width="6" height="8"/>
+  </g>
+  <rect y="560" width="1600" height="140" fill="url(#haze)"/>
+
+  <!-- Boulevard -->
+  <rect y="700" width="1600" height="200" fill="#0d0716"/>
+  <path d="M700 700 L900 700 L1240 900 L360 900Z" fill="#150b22"/>
+  <g fill="#ffd58a" opacity="0.8">
+    <rect x="795" y="712" width="10" height="16"/><rect x="792" y="752" width="16" height="26"/><rect x="787" y="812" width="26" height="40"/>
+  </g>
+
+  <use href="#palm" transform="translate(110 900) scale(1.25)"/>
+  <use href="#palm" transform="translate(300 880) scale(0.9) rotate(4)"/>
+  <use href="#palm" transform="translate(1340 900) scale(1.15) rotate(-3)"/>
+  <use href="#palm" transform="translate(1520 890) scale(1.4) rotate(2)"/>
+</svg>
