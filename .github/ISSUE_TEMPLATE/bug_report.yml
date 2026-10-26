@@ -1,0 +1,48 @@
+name: Bug report
+description: Something isn't working as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for reporting! The more detail you give, the faster we can fix it.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Create a room on a laptop
+        2. Join from a phone
+        3. Play "Sync Check"
+        4. ...
+    validations:
+      required: true
+  - type: textarea
+    id: devices
+    attributes:
+      label: Devices and browsers
+      description: List every device in the room.
+      placeholder: Chrome 130 on Pixel 8, Safari 18 on MacBook Air M2
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Sync diagnostics
+      description: For sync problems, copy the "Sync diagnostics" line from Settings on each device. Mention Bluetooth speakers and whether devices share a Wi-Fi network.
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: v0.1.0 or a commit SHA
+  - type: textarea
+    id: logs
+    attributes:
+      label: Server logs or console errors
+      render: text

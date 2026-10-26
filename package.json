@@ -1,24 +1,38 @@
 {
   "name": "tunegathering",
   "version": "0.1.0",
-  "description": "Listen together: millisecond-synced music playback across every device in the room, with spatial audio and chat.",
+  "description": "Turn every phone and laptop in the room into one speaker system: millisecond-synced browser playback, spatial audio and chat.",
   "type": "module",
   "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js",
     "dev": "node --watch server/index.js",
     "demo-tracks": "node scripts/generate-demo-tracks.js",
+    "check": "node scripts/check-syntax.js",
     "test": "node --test test/*.test.js"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ww2d2vjh8c-lab/tunegathering.git"
+  },
+  "homepage": "https://github.com/ww2d2vjh8c-lab/tunegathering#readme",
+  "bugs": {
+    "url": "https://github.com/ww2d2vjh8c-lab/tunegathering/issues"
+  },
+  "author": "Ayush Kaushik (https://github.com/ww2d2vjh8c-lab)",
   "keywords": [
     "audio",
     "sync",
+    "synchronized-playback",
+    "multi-device",
     "web-audio",
     "websocket",
-    "listen-together"
+    "spatial-audio",
+    "listen-together",
+    "party"
   ],
   "license": "MIT",
   "dependencies": {
