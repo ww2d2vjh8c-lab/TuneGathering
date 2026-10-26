@@ -13,6 +13,8 @@ npm start
 
 Open **http://localhost:3000**. The server also prints a `Network:` address. Open that address on other devices on the same Wi-Fi, join the same session code, and press play.
 
+**Or run it in GitHub Codespaces:** open the repo, then **Code → Codespaces → Create codespace**. Dependencies install, the server starts, and port 3000 opens in your browser automatically. To let phones join, set port 3000's visibility to **Public** in the Ports tab and share that URL.
+
 Three demo tracks are synthesized on first start, so there's music immediately. One of them is a click track, which makes it easy to hear whether devices line up.
 
 | Command | What it does |

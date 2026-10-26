@@ -1,0 +1,13 @@
+{
+  "name": "TuneGathering",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "postCreateCommand": "npm install",
+  "postAttachCommand": "npm start",
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "TuneGathering",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
